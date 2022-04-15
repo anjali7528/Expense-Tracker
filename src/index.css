@@ -116,6 +116,7 @@ input[type='number'] {
   margin-bottom: 40px;
 }
 
+
 .list li {
   background-color: #fff;
   box-shadow: var(--box-shadow);
@@ -125,6 +126,7 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  margin-left: 30px;
 }
 
 .list li.plus {
@@ -148,9 +150,18 @@ input[type='number'] {
   left: 0;
   transform: translate(-100%, -50%);
   opacity: 0;
+  z-index:100 !important;
   transition: opacity 0.3s ease;
 }
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+.scroller{
+  max-height: 15vh;
+  margin-left:-30px;
+  overflow-y: scroll;
+}
+.scroller::-webkit-scrollbar {
+  display: none;
 }

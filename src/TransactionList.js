@@ -8,10 +8,16 @@ function TransactionList() {
   return (
     <div>
        <h3>History</h3>
+       <div className="itemList">
+       <div className='scroller'>
        <ul  className="list">
            {transctions.map(transction =>(<Transaction key={transction.id} transction={transction}/>))}
           
            </ul> 
+       </div>
+       </div>
+       
+       
     </div>
   )
 }
