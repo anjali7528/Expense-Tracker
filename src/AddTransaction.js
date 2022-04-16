@@ -5,6 +5,10 @@ function AddTransaction() {
     const [text, setText] = useState(" ");
     const [amount, setAmount] = useState(0);
 
+    //form  state
+    //stateupdate =>expand and new value;
+    //useffect 
+
     const { addTransaction } = useContext(GlobalContext);
 
     const onSubmit = e => {
@@ -16,8 +20,8 @@ function AddTransaction() {
             amount: +amount
         }
         
-        //  localStorage.clear();
-        window.localStorage.setItem('newTransaction', newTransaction);
+        //localStorage.clear();
+        // window.localStorage.setItem('newTransaction', newTransaction);
        
        addTransaction(newTransaction);
     }
@@ -26,7 +30,6 @@ function AddTransaction() {
       
     //     localStorage.setItem('item',JSON.stringify(text));
     //     localStorage.setItem('amount', amount);
-
       
     // }, [amount, text]);
 
